@@ -542,6 +542,8 @@ Start the virtual machine after selecting the YunoHost image.
   - N.B. : if the server was previously installed with a recent version of Windows (8+), you first need to tell Windows, to "actually reboot". This can be done somewhere in "Advanced startup options".
 
 !!! If you can't boot the YunoHost image, try using Ventoy (select "Ventoy" in the section "Flash the YunoHost image" above).
+
+!!! If after booting everything looks very glitchy, you should either boot using UEFI mode (instead of “legacy”/CSM/BIOS mode), or need to change the `vga=` entry in GRUB to match your screen’s resolution. [See this Debian forum post for details](https://forums.debian.net/viewtopic.php?t=155182).
 {% endif %}
 
 {% if regular or virtualbox %}
